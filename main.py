@@ -1,9 +1,20 @@
-def mergeSort(alist):
-    print("Splitting ",alist)
-    if len(alist)>1:
-        mid = len(alist)//2
-        lefthalf = alist[:mid]
-        righthalf = alist[mid:]
+from random import randint # para gerar os nums aleatorios
+vetor = []
+
+def vetorAleatorio(inicio, fim, tamanho):
+    
+    for i in range(tamanho): # vamos fazer isto tam (N) vezes
+        vetor.append(randint(inicio, fim)) # gerar numero aleatorio entre L e H, e colocar na nossa lista
+    print("antes de ordenar\n",vetor)
+    return vetor
+
+
+def mergeSort(vet):
+    #print("Splitting ",vet)
+    if len(vet)>1:
+        mid = len(vet)//2
+        lefthalf = vet[:mid]
+        righthalf = vet[mid:]
 
         mergeSort(lefthalf)
         mergeSort(righthalf)
@@ -13,24 +24,32 @@ def mergeSort(alist):
         k=0
         while i < len(lefthalf) and j < len(righthalf):
             if lefthalf[i] < righthalf[j]:
-                alist[k]=lefthalf[i]
+                vet[k]=lefthalf[i]
                 i=i+1
             else:
-                alist[k]=righthalf[j]
+                vet[k]=righthalf[j]
                 j=j+1
             k=k+1
 
         while i < len(lefthalf):
-            alist[k]=lefthalf[i]
+            vet[k]=lefthalf[i]
             i=i+1
             k=k+1
 
         while j < len(righthalf):
-            alist[k]=righthalf[j]
+            vet[k]=righthalf[j]
             j=j+1
             k=k+1
-    print("Merging ",alist)
+   # print("Merging ",alist)
 
-alist = [54,26,93,17,77,31,44,55,20]
-mergeSort(alist)
-print(alist)
+
+#L = int(input('Informe o valor inteiro minimo da faixa:'))
+#H = int(input('Informe o valor inteiro maximo da faixa:'))
+#tam = int(input('Informe a quantidade de valores a serem sorteados:'))
+inicio=0
+fim=100
+tamanho=50
+
+vetorAleatorio(inicio, fim, tamanho)
+mergeSort(vetor)
+print(vetor)
