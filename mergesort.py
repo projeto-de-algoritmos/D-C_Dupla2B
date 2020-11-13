@@ -1,4 +1,5 @@
-def mergeSort(vet):
+
+def main(vet):
     
     #print("Splitting ",vet)
     if len(vet)>1:
@@ -6,8 +7,8 @@ def mergeSort(vet):
         lefthalf = vet[:mid]
         righthalf = vet[mid:]
 
-        mergeSort(lefthalf)
-        mergeSort(righthalf)
+        main(lefthalf)
+        main(righthalf)
 
         i=0
         j=0

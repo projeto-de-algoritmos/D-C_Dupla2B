@@ -1,1 +1,3 @@
+import geragrafico
 
+geragrafico.main()
