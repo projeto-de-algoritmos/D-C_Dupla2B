@@ -1,44 +1,42 @@
-**!! Atenção: Renomeie o seu repositório para (Tema)_(NomeDoProjeto). !!** 
+# D&C Dupla2 turma B 
 
-Temas:
- - Grafos1
- - Grafos2
- - PD
- - D&C
- - Greed
- - Final 
- 
- **!! *Não coloque os nomes dos alunos no título do repositório*. Exemplo de título correto: Grafos2_Labirinto-do-Minotauro !!**
- 
- (Apague essa seção)
-
-# NomedoProjeto
-
-**Número da Lista**: X<br>
-**Conteúdo da Disciplina**: XXXXXXXXXX<br>
+**Número da Lista**: 4<br>
+**Conteúdo da Disciplina**: D&C<br>
 
 ## Alunos
 |Matrícula | Aluno |
 | -- | -- |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
-| xx/xxxxxx  |  xxxx xxxx xxxxx |
+| 15/0132344  |  João Pedro Soares Cirqueira |
+| 15/0136862  |  Lucas Alexandre Fernandes Martins |
 
 ## Sobre 
-Descreva os objetivos do seu projeto e como ele funciona. 
+O projeto consiste em mostrar o tempo de ordenação de um vetor gerado aleatoriamente utilizando o algoritmo mergeSort para esta ordenação, sendo um gráfico com relação entre o tamanho do vetor e o tempo de execução. Também é feito uma comparação entre o algoritmo mergeSorte e bubbleSort.
 
 ## Screenshots
-Adicione 3 ou mais screenshots do projeto em funcionamento.
+
+![Menu](./imagens/menu.png)
+![Grafico 1](./imagens/grafico1.png)
+![Grafico 2](./imagens/grafico2.png)
+
 
 ## Instalação 
-**Linguagem**: xxxxxx<br>
-**Framework**: (caso exista)<br>
-Descreva os pré-requisitos para rodar o seu projeto e os comandos necessários.
+**Linguagem**: Python<br>
+- Biblioteca matplotlib instalada
+> ``` $ pip install matplotlib```
+
+### Linux
+
+#### Pelo terminal
+- Para clonar o repositório:
+> $ git clone https://github.com/projeto-de-algoritmos/D-C_Dupla2B
 
 ## Uso 
-Explique como usar seu projeto caso haja algum passo a passo após o comando de execução.
+Execute o programa com o comando 
+``` $ python3 main.py ```
+siga as intruções do termial
 
 ## Outros 
-Quaisquer outras informações sobre seu projeto podem ser descritas abaixo.
+O video com a explicação sobre o projeto está dentro da pasta video.
 
 
 

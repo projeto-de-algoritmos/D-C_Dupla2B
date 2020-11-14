@@ -13,15 +13,15 @@ if __name__ == '__main__':
     
     while loop:
         print_menu()
-        choice = input("Entre sua opcao [1-4]: ")            
+        choice = input("Entre sua opcao [1-3]: ")            
         if choice=='1':
             print("Opcao 1 foi escolhida")
-            geragrafico.main()
+            geragrafico.main(False)
         elif choice=='2':
             print("Opcao 2 foi escolhida")
-            geragrafico.main()
+            geragrafico.main(True)
         elif choice=='3':
-            print("Opcao 4 foi escolhida")
+            print("Opcao 3 foi escolhida")
             print('Saindo....')
             loop=False
         else:
